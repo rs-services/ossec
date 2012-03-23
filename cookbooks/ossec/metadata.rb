@@ -7,10 +7,14 @@ version          "1.0.1"
 
 depends "build-essential"
 
-
 %w{ debian ubuntu arch redhat centos fedora }.each do |os|
   supports os
 end
+
+recipe "ossec::default", "Installs and configures OSSEC."
+recipe "ossec::agent", "OSSEC agent install."
+recipe "ossec::client", "OSSEC client install."
+recipe "ossec::server", "OSSEC server install."
 
 attribute "ossec/server/maxagents",
   :display_name => "Server Max Agents",
