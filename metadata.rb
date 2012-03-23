@@ -43,7 +43,7 @@ attribute "ossec/version",
 attribute "ossec/url",
   :display_name => "",
   :description => "",
-  :default => "http://www.ossec.net/files/ossec-hids-#{node['ossec']['version']}.tar.gz",
+  :default => "http://www.ossec.net/files/ossec-hids-2.6.tar.gz",
   :required => "optional",
   :recipes => [ "ossec::default" ]
 
