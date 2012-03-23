@@ -7,6 +7,11 @@ version          "1.0.1"
 
 depends "build-essential"
 
+
+%w{ debian ubuntu arch redhat centos fedora }.each do |os|
+  supports os
+end
+
 attribute "ossec/server/maxagents",
   :display_name => "Server Max Agents",
   :description => "Max number of agents a server will alllow to connect to itself",
