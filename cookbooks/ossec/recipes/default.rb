@@ -15,9 +15,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# install ossec (ossec-hids)
 include_recipe "ossec::install"
 
-service "ossec" do
-  supports :status => true, :restart => true
+# ensure the ossec-hids service is enabled and started
+service "ossec-hids" do
   action [:enable, :start]
 end
