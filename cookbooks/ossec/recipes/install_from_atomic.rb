@@ -18,3 +18,5 @@
 include_recipe "ossec::install_atomic_archive"
 
 package "ossec-hids"
+
+package "ossec-hids-client" if node['ossec']['user']['install_type'] = 'local'
