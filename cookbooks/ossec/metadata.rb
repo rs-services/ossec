@@ -15,6 +15,13 @@ recipe "ossec::default", "Installs and configures OSSEC."
 recipe "ossec::agent", "OSSEC agent install."
 recipe "ossec::client", "OSSEC client install."
 recipe "ossec::server", "OSSEC server install."
+recipe "ossec::install", "Installs OSSEC HIDS."
+recipe "ossec::install_from_source", "Installs OSSEC from source."
+recipe "ossec::install_from_atomic", "Installs OSSEC HIDS from the Atomic YUM repository."
+recipe "ossec::install_atomic_archive", "Installs the YUM Atomic repository."
+recipe "ossec::service_status", "Shows OSSEC services status."
+recipe "ossec::start_service", "Starts the ossec system service."
+recipe "ossec::stop_service", "Stops the ossec system service."
 
 attribute "ossec/server/maxagents",
   :display_name => "Server Max Agents",

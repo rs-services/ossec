@@ -398,7 +398,14 @@
     "ossec::default": "Installs and configures OSSEC.",
     "ossec::agent": "OSSEC agent install.",
     "ossec::client": "OSSEC client install.",
-    "ossec::server": "OSSEC server install."
+    "ossec::server": "OSSEC server install.",
+    "ossec::install": "Installs OSSEC HIDS.",
+    "ossec::install_from_source": "Installs OSSEC from source.",
+    "ossec::install_from_atomic": "Installs OSSEC HIDS from the Atomic YUM repository.",
+    "ossec::install_atomic_archive": "Installs the YUM Atomic repository.",
+    "ossec::service_status": "Shows OSSEC services status.",
+    "ossec::start_service": "Starts the ossec system service.",
+    "ossec::stop_service": "Stops the ossec system service."
   },
   "version": "1.0.1"
 }
